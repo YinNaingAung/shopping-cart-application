@@ -1,6 +1,18 @@
 let partone = document.querySelector(".partone");
 let showchosencart = document.querySelector(".showchosencart");
 
+let carts = [];
+
+try {
+    carts = JSON.parse(localStorage.getItem("data")) || [];
+} catch (e) {
+    carts = [];
+}
+
+window.addtocart = addtocart;
+window.changeQuantity = changeQuantity;
+window.removelist = removelist;
+
 // to dispaly each card on website 
 let html = "";
 products.forEach(info=>{
@@ -21,7 +33,7 @@ products.forEach(info=>{
 partone.innerHTML = html;
 
 //click btn to dispaly the card on website that have chosen
-let carts = JSON.parse(localStorage.getItem("data"))|| [];
+
 function addtocart(id){
     if(carts.some(data=>data.id === id)){
         changeQuantity("plus",id)
