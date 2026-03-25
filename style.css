@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+}
+.whole-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    min-width: 100%;
+    min-height: 100vh;
+    padding: 50px;
+}
+.whole-container h1{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.shopify{
+    width: 50px;
+    height: 50px;
+}
+.twoparts{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    /* border: 1px solid red; */
+}
+.partone{
+    /* border: 1px solid yellow; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+
+}
+
+
+.parttwo{
+    border: 2px solid gainsboro;
+    border-radius: 10px;
+    min-width: 40%;
+    padding: 20px;
+    height: 50%;
+
+}
+.card1{
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 90%;
+    margin-bottom: 15px;
+
+}
+.partone .laptopphoto{
+    /* width: 300px; */
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.cardinfo{
+    padding: 10px;
+    line-height: 40px;
+}
+.cardinfo button{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border:none;
+    outline: none;
+    border-radius: 20px;
+    margin:10px 0;
+    cursor: pointer;
+}
+
+
+
+
+
+.cartListhead{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #f4f4f4; */
+    margin-bottom: 10px;
+}
+.shopcart{
+    width: 50px;
+}
+.shopcartcontainer{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.shopcartcontainer span{
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: var(--background-color);
+    border-radius: 50%;
+}
+
+
+.parttwo table{
+    width: 100%;
+    margin: 10px 0px;
+}
+.parttwo table thead tr th{
+/* border: 1px solid black; */
+width: 20%; 
+padding: 10px 0 15px 0;
+border-bottom: 1px solid gainsboro;
+text-align: left;
+}
+
+.parttwo table tbody tr td{
+    padding:10px 0;
+width: 20%; 
+/* border: 1px solid rebeccapurple; */
+text-align: left;
+}
+.parttwo table tbody tr td img{
+    width:70px;
+}
+.removebtn{
+    padding: 5px 10px;
+}
+.indebtn{
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    line-height:10px;;
+}
+
+.total-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 10px 0px;
+}
+
+.noitem  p{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+@media(max-width:1029px){
+    .partone{
+        grid-template-columns: 1fr;
+    }
+    .parttwo{
+        width:50%;
+    }
+}

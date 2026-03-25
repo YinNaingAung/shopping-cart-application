@@ -1,0 +1,26 @@
+let products = [
+    {
+        id:1,
+        name:"Laptop1",
+        price:1000,
+        src:"./laptopimage/laptop1.jpg"
+    },
+    {
+        id:2,
+        name:"Laptop2",
+        price:2000,
+        src:"./laptopimage/laptop2.jpg"
+    },
+    {
+        id:3,
+        name:"Laptop3",
+        price:3000,
+        src:"./laptopimage/laptop3.jpg"
+    },
+    {
+        id:4,
+        name:"Laptop4",
+        price:4000,
+        src:"./laptopimage/laptop4.jpg"
+    }
+]
